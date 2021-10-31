@@ -11,9 +11,10 @@ function unStrike() {
 }
 
 function App() {
+  const strikeThrough = { textDecoration: "line-through" };
   return (
     <div>
-      <p style={isDone ? { textDecoration: "line-through" } : null}>Buy milk</p>
+      <p style={isDone ? strikeThrough : null}>Buy milk</p>
       <button onClick={strike}>Change to strike through</button>
       <button onClick={unStrike}>Change back</button>
     </div>
