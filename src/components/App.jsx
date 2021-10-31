@@ -10,6 +10,8 @@ function unStrike() {
   isDone = false;
 }
 
+// It's not change need hook to apply
+
 function App() {
   const strikeThrough = { textDecoration: "line-through" };
   return (
